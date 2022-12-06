@@ -1,0 +1,59 @@
+.howRangWorksContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  .howRangWorksBackground {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+  }
+  .howRangWorksWrapper {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8%;
+
+    .howRangWorksStripHeading {
+      font-size: 2rem;
+      height: 8vh;
+    }
+    .howRangWorksStripRow {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+    .howRangWorksStripItem {
+      display: flex;
+      justify-content: center;
+      gap: 12.5px;
+      width: 20vw;
+      height: 25vh;
+
+      .howRangWorksStripItemIcon {
+        margin-top: 15px;
+        height: 30px;
+        width: auto;
+      }
+      .howRangWorksStripItemText {
+        align-self: flex-start;
+        width: 65%;
+        .stripItemHeading {
+          font-size: 1.3rem;
+        }
+        .stripItemDescription {
+          font-size: 1.1rem;
+          font-weight: 400;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

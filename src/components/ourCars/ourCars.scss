@@ -1,0 +1,112 @@
+#ourCarsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+
+  .ourCarsHeading {
+    font-size: 2.1rem;
+  }
+  .ourCarsSlider {
+    min-height: 60vh;
+    height: 60vh;
+    width: 60vw;
+
+    .carSliderWrapper {
+      position: relative;
+      height: 100%;
+      .goRight {
+        position: absolute;
+        right: -100px;
+        top: 50%;
+        transform: translate(0%, -50%);
+        font-size: 5rem;
+        cursor: pointer;
+      }
+      .goLeft {
+        position: absolute;
+        left: -100px;
+        top: 50%;
+        transform: translate(0%, -50%);
+        font-size: 5rem;
+        cursor: pointer;
+      }
+      .goLeft:hover {
+        color: orangered;
+        transition: 500ms;
+      }
+      .goRight:hover {
+        color: orangered;
+        transition: 500ms;
+      }
+      .carSlider {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100%;
+        -webkit-box-shadow: 6px 4px 16px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 6px 4px 16px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 6px 4px 16px 0px rgba(0, 0, 0, 0.75);
+        border-radius: 25px;
+        .slideDetails {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-left: 10%;
+          padding-bottom: 10%;
+          .slideHeading {
+            font-size: 1.6rem;
+            font-weight: 700;
+          }
+          .slideText {
+            font-size: 1.25rem;
+            margin: 5px;
+          }
+          .silderIcons {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 80px;
+            bottom: 5px;
+
+            .sliderIconItem {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              .silderIcon {
+                font-size: 2rem;
+              }
+            }
+          }
+          .slidePayment {
+            position: absolute;
+            left: 0px;
+            bottom: 85px;
+            border-radius: 0px 50px 50px 0px;
+            background-color: #000;
+            color: #fff;
+            padding: 25px;
+            width: 30%;
+            font-size: 1.5rem;
+          }
+        }
+        .carSliderImage {
+          height: 100%;
+        }
+      }
+    }
+  }
+  .ourCarsButtonContainer {
+    padding-top: 3.5%;
+  }
+}
+
+.ourCarsMilageNote {
+  align-self: flex-start;
+  margin-left: 21%;
+  font-size: 0.9rem;
+}

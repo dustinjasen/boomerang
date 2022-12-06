@@ -1,0 +1,36 @@
+.complianceBlackStripContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+  .complianceBlackStripBackground {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+  }
+  .complianceBlackStripWrapper {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+
+    .complianceBlackStripHeading {
+        font-size: 2.8rem;
+    }
+    .complianceBlackStripText {
+        font-size: 1.35rem;
+    }
+
+  }
+
+  .complianceBlackStripButton {
+    padding-top: 2.5%;
+    position: relative;
+    z-index: 2;
+  }
+}

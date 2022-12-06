@@ -1,0 +1,61 @@
+.benefitsOfHybridContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 100vw;
+
+  .benefitsOfHybridWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    padding: 0% 5%;
+    .benefitsOfHybridHeading {
+      font-size: 2.5rem;
+      margin-bottom: 5%;
+    }
+    .benefitsOfHybridIconContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 5%;
+      width: 100%;
+      margin-bottom: 5%;
+      .benefitsIconItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        width: 15vw;
+        height: 22vh;
+        background: linear-gradient(
+          120.92deg,
+          rgb(20, 134, 198) 20.34%,
+          rgb(130, 208, 252) 151.52%
+        );
+        -webkit-box-shadow: 6px 4px 16px 0px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 6px 4px 16px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 6px 4px 16px 0px rgba(0, 0, 0, 0.5);
+        border-radius: 35px;
+        padding: 15px;
+        .benefitsIcon {
+          font-size: 5rem;
+          color: white;
+        }
+        .benefitsText {
+          width: 100%;
+          height: 5vh;
+          font-size: 1.05rem;
+          color: white;
+        }
+      }
+    }
+    .benefitsOfHybridButtonContainer {
+      padding-top: 3.5%;
+    }
+  }
+}

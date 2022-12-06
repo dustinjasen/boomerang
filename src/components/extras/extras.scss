@@ -1,0 +1,61 @@
+.extrasContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  .extrasHeading {
+    font-size: 2.2rem;
+    margin: 0;
+  }
+  .extrasSubHeading {
+    font-size: 1.25rem;
+    margin-bottom: 50px;
+  }
+  .extrasImageGrid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 65%;
+    height: auto;
+    gap: 10px;
+
+    .extrasGridItem {
+      position: relative;
+      
+      .extrasImage {
+        position: relative;
+        z-index: 1;
+        -webkit-box-shadow: 4px 2px 8px 0px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 4px 2px 8px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 4px 2px 8px 0px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+      }
+      .extrasGridText {
+        text-align: center;
+        color: #fff;
+        position: absolute;
+        z-index: 3;
+        font-size: 1.3rem;
+        top: 20px;
+        padding: 1%;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+      }
+    }
+  }
+  .extrasBottom {
+    margin-top: 2%;
+    text-align: center;
+    font-size: 1.3rem;
+    width: 65%;
+    .extrasBottomAccent {
+      color: #f14c0f;
+      font-weight: 800;
+    }
+  }
+}

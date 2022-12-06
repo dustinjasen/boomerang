@@ -1,0 +1,74 @@
+.FAQContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  margin-top: 50px;
+
+  .FAQHeading {
+    font-size: 2.5rem;
+  }
+
+  .FAQAccordion {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    .FAQAccordButtonOpen {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 50vw;
+      padding: 25px 60px;
+      border-radius: 50px;
+      font-size: 1.6rem;
+      font-weight: 700;
+      cursor: pointer;
+      margin-bottom: 10px;
+      color: #fff;
+      border: 2px solid transparent;
+      background: linear-gradient(
+        120.92deg,
+        rgb(241, 76, 15) -9.84%,
+        rgb(241, 134, 15) 65.35%
+      );
+      transition: 1s;
+      .openClose {
+        font-size: 2rem;
+      }
+    }
+
+    .FAQAccordButtonClosed {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 50vw;
+      padding: 25px 60px;
+      border: 2px solid black;
+      border-radius: 50px;
+      font-size: 1.6rem;
+      font-weight: 700;
+      cursor: pointer;
+      margin-bottom: 10px;
+      transition: 1s;
+      .openClose {
+        font-size: 2rem;
+      }
+    }
+
+    .FAQAccordionContent {
+      width: 50vw;
+      max-width: 50vw;
+      p {
+        margin-left: 20%;
+        padding-left: 3%;
+        border-left: 1px solid rgba(0, 0, 0, 0.8);
+        font-size: 1.2rem;
+        width: 50%;
+      }
+    }
+  }
+}

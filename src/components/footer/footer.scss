@@ -1,0 +1,168 @@
+.siteFooter {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  max-height: 60vh;
+  width: 100vw;
+  color: #fff;
+
+  .footerSpacerBottom {
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    width: 100vw;
+    .footerTop {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 15vh;
+      max-height: 15vh;
+      background-color: #000;
+
+      .footerIcons {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding-top: 50px;
+
+        .footerIconItem {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .footerIconItemLink {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #fff;
+          }
+          .footerIconImage {
+            height: 42px;
+            width: 42px;
+          }
+        }
+      }
+      .footerBorder {
+        border-bottom: 1px solid grey;
+        width: 90%;
+      }
+    }
+
+    .footerMiddle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 25vh;
+      max-height: 25vh;
+      background-color: #000;
+      padding-top: 1.5%;
+
+      .footerMiddleContent {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding-bottom: 20px;
+        .footerMiddleContentSocialItem {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .footerMiddleContentSocial {
+            display: flex;
+            .footerMiddleContentSocialIcon {
+              font-size: 4rem;
+              margin-top: 20px;
+            }
+            p {
+              font-size: 2rem;
+              margin-bottom: 15px;
+            }
+          }
+        }
+        .footerMiddleContentItem {
+          display: flex;
+          flex-direction: column;
+          .footerMiddleLocations {
+            display: flex;
+            gap: 40px;
+          }
+          .footerInputContainer {
+            display: flex;
+            .footerTextInputContainer {
+              .footerTextInput {
+                border-radius: 50px 0px 0px 50px;
+                padding: 8px;
+                padding-left: 30px;
+                background-color: #000;
+                color: #fff;
+                font-size: 0.8rem;
+                width: 12.5vw;
+              }
+            }
+            .footerInputButtonContainer {
+              margin-left: 10px;
+              .newsButton {
+                background-color: white;
+                border-radius: 0px 50px 50px 0px;
+                padding: 8px;
+                font-size: 0.8rem;
+                font-weight: 600;
+              }
+            }
+          }
+          .footerTextInputContainer {
+            font-size: 0.75rem;
+          }
+        }
+      }
+    }
+    .footerTopNav {
+      position: absolute;
+      width: 62px;
+      height: 62px;
+      right: 20px;
+      bottom: 30px;
+    }
+    .footerBottom {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #141210;
+      height: 10vh;
+      max-height: 10vh;
+      font-size: 0.8rem;
+      width: 100%;
+
+      .footerBottomContent {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+
+        .footerBottomContentItemMid {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          p {
+            margin: 0;
+          }
+          .footerBottomLink {
+            text-decoration: none;
+            color: #fff;
+          }
+        }
+        .footerBottomContentItem {
+          .footerBottomLink {
+            text-decoration: none;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
