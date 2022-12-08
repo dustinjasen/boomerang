@@ -52,3 +52,34 @@
     }
   }
 }
+
+@media screen and (max-width: 1700px) {
+
+  .applyContainer {
+    .applyHeading {
+      font-size: 1.75rem;
+    }
+    .applyLicenceContainer {
+      .applyLicenceBoxTextHeading {
+        margin: 0;
+      }
+      .applyLicenceBoxLeft {
+        font-size: 0.9rem;
+        .applyLicenceBoxImage {
+          width: auto;
+          height: 25vh;
+          border-radius: 15px;
+        }
+      }
+      .applyLicenceBoxRight {
+        font-size: 0.9rem;
+        .applyLicenceBoxImage {
+          width: auto;
+          height: 25vh;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+
+}

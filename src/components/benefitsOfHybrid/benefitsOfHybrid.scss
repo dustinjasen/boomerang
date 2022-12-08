@@ -59,3 +59,46 @@
     }
   }
 }
+
+@media screen and (max-width: 1700px) {
+  .benefitsOfHybridContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100vw;
+  
+    .benefitsOfHybridWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5%;
+      padding: 0% 5%;
+      .benefitsOfHybridHeading {
+        font-size: 2.5rem;
+        margin-bottom: 5%;
+      }
+      .benefitsOfHybridIconContainer {
+        .benefitsIconItem {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          gap: 10px;
+          width: 15vw;
+          height: 22vh;
+          padding: 15px;
+          .benefitsIcon {
+            font-size: 4.3rem;
+          }
+          .benefitsText {
+            height: 5vh;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}

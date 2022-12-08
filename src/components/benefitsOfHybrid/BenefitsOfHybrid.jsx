@@ -16,7 +16,7 @@ const BenefitsOfHybrid = () => {
                 <div className="benefitsOfHybridIconContainer">
                     <div className="benefitsIconItem">
                         <FactCheckIcon className="benefitsIcon" />
-                        <p className="benefitsText">Comply with clean air zones<br />- avoid being charged</p>
+                        <p className="benefitsText">Comply with clean air zones<br />- avoid charge</p>
                     </div>
                     <div className="benefitsIconItem">
                         <PercentIcon className="benefitsIcon" />

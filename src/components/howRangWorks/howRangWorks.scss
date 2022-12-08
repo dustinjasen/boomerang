@@ -57,3 +57,19 @@
     }
   }
 }
+
+@media screen and (max-width: 1700px) {
+  .howRangWorksContainer {
+
+    .howRangWorksWrapper {
+      padding: 0 5%;
+  
+      .howRangWorksStripHeading {
+        font-size: 1.8rem;
+      }
+      .howRangWorksStripButtonContainer {
+        margin-top: 100px;
+      }
+    }
+  }
+}

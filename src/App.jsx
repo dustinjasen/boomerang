@@ -13,19 +13,22 @@ import Footer from './components/footer/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <Landing />
-      <Description />
-      <Extras />
-      <HowRangWorks />
-      <BenefitsOfHybrid />
-      <Apply />
-      <OurCars />
-      <Compliance />
-      <Reviews />
-      <FAQ />
-      <Footer />
-    </div>
+    <>
+      <div className="App">
+        <Landing />
+        <Description />
+        <Extras />
+        <HowRangWorks />
+        <BenefitsOfHybrid />
+        <Apply />
+        <OurCars />
+        <Compliance />
+        <Reviews />
+        <FAQ />
+        <Footer />
+      </div>
+      <p className="AppNoDisplay"> This demo is for desktop screens 1350px+ </p>
+    </>
   );
 }
 

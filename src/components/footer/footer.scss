@@ -166,3 +166,106 @@
     }
   }
 }
+
+@media screen and (max-width: 1700px) {
+  .siteFooter {
+  
+    .footerSpacerBottom {
+
+      .footerTop {
+        font-size: 0.7rem;
+  
+        .footerIcons {
+
+  
+          .footerIconItem {
+
+            .footerIconImage {
+              height: 38px;
+              width: 38px;
+            }
+          }
+        }
+        .footerBorder {
+          border-bottom: 1px solid grey;
+          width: 90%;
+        }
+      }
+  
+      .footerMiddle {
+  
+        .footerMiddleContent {
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+          padding-bottom: 20px;
+          .footerMiddleContentSocialItem {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .footerMiddleContentSocial {
+              display: flex;
+              .footerMiddleContentSocialIcon {
+                font-size: 3rem;
+                margin-top: 5px;
+              }
+              p {
+                font-size: 1.1rem;
+                margin-bottom: 15px;
+              }
+            }
+          }
+          .footerMiddleContentItem {
+            font-size: 0.65rem;
+            .footerMiddleLocations {
+              display: flex;
+              gap: 40px;
+            }
+            .footerInputContainer {
+              display: flex;
+              .footerTextInputContainer {
+                .footerTextInput {
+                  border-radius: 50px 0px 0px 50px;
+                  padding: 8px;
+                  padding-left: 30px;
+                  background-color: #000;
+                  color: #fff;
+                  font-size: 0.8rem;
+                  width: 12.5vw;
+                }
+              }
+              .footerInputButtonContainer {
+                .newsButton {
+                  font-size: 0.6rem;
+                }
+              }
+            }
+            .footerTextInputContainer {
+              font-size: 0.75rem;
+            }
+          }
+        }
+      }
+      .footerTopNav {
+        width: 55px;
+        height: 55px;
+        right: 20px;
+        bottom: 20px;
+      }
+      .footerBottom {
+        font-size: 0.6rem;
+  
+        .footerBottomContent {
+  
+          .footerBottomContentItem {
+            .footerBottomLink {
+              text-decoration: none;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -10,27 +10,25 @@
   .boomerangOnly {
     position: absolute;
     z-index: 3;
-    height: 250px;
-    left: 10%;
-    top: 45%;
-    transform: translate(0%, -45%);
-    -webkit-animation: boomIn 3.5s forwards;
-    animation: boomIn 3.5s forwards;
+    left: 20%;
+    top: 32%;
+    transform: translate(0%, -40%);
+    -webkit-animation: boomIn 4s forwards;
+    animation: boomIn 4s forwards;
   }
   @-webkit-keyframes boomIn {
     0% {
       height: 250px;
       opacity: 1;
       z-index: 3;
-      top: 40%;
-      transform: translate(0%, -40%);
-      left: 10%;
+      top: 32%;
+      left: 20%;
       -webkit-transform: translateX(0);
       transform: translateX(0);
     }
     35% {
       height: 250px;
-      left: 65%;
+      left: 63%;
       top: 40%;
       transform: translate(0%, -40%);
       z-index: 3;
@@ -43,7 +41,7 @@
     }
     85% {
       height: 185px;
-      left: 58%;
+      left: 57.5%;
       top: 40%;
       transform: translate(0%, -40%);
       z-index: 3;
@@ -66,15 +64,14 @@
       height: 250px;
       opacity: 1;
       z-index: 3;
-      top: 40%;
-      transform: translate(0%, -40%);
-      left: 10%;
+      top: 32%;
+      left: 20%;
       -webkit-transform: translateX(0);
       transform: translateX(0);
     }
     35% {
       height: 250px;
-      left: 65%;
+      left: 63%;
       top: 40%;
       transform: translate(0%, -40%);
       z-index: 3;
@@ -87,7 +84,7 @@
     }
     85% {
       height: 185px;
-      left: 58%;
+      left: 57.5%;
       top: 40%;
       transform: translate(0%, -40%);
       z-index: 3;
@@ -108,59 +105,152 @@
 
   .boomerangText {
     position: absolute;
-    z-index: 3;
-    left: 30%;
-    top: 42%;
-    transform: translate(-40%, -42%);
-    height: 10%;
-    width: 0px;
-
-    -webkit-animation: boomTextIn 3.5s forwards;
-    animation: boomTextIn 3.5s forwards;
+    -webkit-animation: boomTextIn 4s forwards;
+    animation: boomTextIn 4s forwards;
   }
   @-webkit-keyframes boomTextIn {
-  }
-  @keyframes boomTextIn {
     0% {
-      height: 10%;
-      width: 100px;
-      left: 40%;
-      top: 42%;
+      height: 100px;
+      width: 0px;
     }
     50% {
-      height: 10%;
-      left: 40%;
-      top: 42%;
-      transform: translate(-40%, -42%);
+      height: 100px;
       width: 600px;
     }
     85% {
-      height: 10%;
-      left: 40%;
-      top: 42%;
-      transform: translate(-40%, -42%);
-      width: 700px;
+      height: 100%;
+      width: 600px;
     }
     90% {
-      height: 35px;
-      left: 180px;
-      opacity: 1;
-      top: 35px;
-      width: 700px;
+      height: 70px;
+      width: 200px;
     }
     98% {
-      height: 55px;
-      width: 110px;
-      left: 180px;
-      opacity: 1;
-      top: 35px;
+      height: 70px;
+      width: 120px;
     }
     to {
       height: 70px;
       width: 120px;
-      left: 180px;
-      opacity: 1;
-      top: 33px;
+    }
+  }
+  @keyframes boomTextIn {
+    0% {
+      height: 100px;
+      width: 0px;
+    }
+    50% {
+      height: 100px;
+      width: 600px;
+    }
+    85% {
+      height: 100%;
+      width: 600px;
+    }
+    90% {
+      height: 70px;
+      width: 200px;
+    }
+    98% {
+      height: 70px;
+      width: 120px;
+    }
+    to {
+      height: 70px;
+      width: 120px;
+    }
+  }
+
+  .openingBox {
+    position: relative;
+    width: 600px;
+    z-index: 4;
+    left: 40%;
+    top: 42%;
+    border: none;
+    -webkit-animation: openBox 4s forwards;
+    animation: openBox 4s forwards;
+    @-webkit-keyframes openBox {
+      0% {
+        height: 10%;
+        left: 40%;
+        top: 42%;
+        transform: translate(-40%, -42%);
+        width: 0px;
+      }
+      50% {
+        height: 10%;
+        left: 43%;
+        top: 42%;
+        transform: translate(-40%, -42%);
+        width: 600px;
+      }
+      85% {
+        height: 10%;
+        left: 43%;
+        top: 42%;
+        transform: translate(-40%, -42%);
+        width: 600px;
+      }
+      90% {
+        height: 70px;
+        left: 130px;
+        top: 4px;
+        width: 200px;
+      }
+      98% {
+        height: 70px;
+        width: 110px;
+        left: 130px;
+        top: 4px;
+      }
+      to {
+        height: 70px;
+        width: 120px;
+        left: 130px;
+        top: 4px;
+      }
+    }
+    @keyframes openBox {
+      0% {
+        height: 10%;
+        left: 40%;
+        top: 42%;
+        transform: translate(-40%, -42%);
+        width: 0px;
+      }
+      50% {
+        height: 10%;
+        left: 43%;
+        top: 42%;
+        transform: translate(-40%, -42%);
+        width: 600px;
+      }
+      85% {
+        height: 10%;
+        left: 43%;
+        top: 42%;
+        transform: translate(-40%, -42%);
+        width: 600px;
+      }
+      90% {
+        height: 70px;
+        left: 130px;
+        top: 4px;
+        width: 200px;
+      }
+      98% {
+        height: 70px;
+        width: 110px;
+        left: 130px;
+        top: 4px;
+      }
+      to {
+        height: 70px;
+        width: 120px;
+        left: 130px;
+        top: 4px;
+      }
     }
   }
 
@@ -172,8 +262,8 @@
     width: 100%;
     height: 90%;
     z-index: 1;
-    -webkit-animation: shrinkImage 5s;
-    animation: shrinkImage 5s;
+    -webkit-animation: shrinkImage 4.8s;
+    animation: shrinkImage 4.8s;
   }
   @-webkit-keyframes shrinkImage {
     0% {
@@ -182,11 +272,19 @@
     }
     50% {
       width: 100%;
-      height: 200%;
+      height: 180%;
     }
-    70% {
+    85% {
+      width: 100%;
+      height: 170%;
+    }
+    90% {
       width: 100%;
       height: 150%;
+    }
+    98% {
+      width: 100%;
+      height: 120%;
     }
     to {
       width: 100%;
@@ -200,17 +298,26 @@
     }
     50% {
       width: 100%;
-      height: 200%;
+      height: 180%;
     }
-    70% {
+    85% {
+      width: 100%;
+      height: 170%;
+    }
+    90% {
       width: 100%;
       height: 150%;
+    }
+    98% {
+      width: 100%;
+      height: 120%;
     }
     to {
       width: 100%;
       height: 90%;
     }
   }
+
   //cars
   .landingImageCars {
     position: absolute;
@@ -260,16 +367,6 @@
       width: 100%;
       display: flex;
 
-      .logoContainer {
-        width: 30%;
-        margin-top: 0.5%;
-        margin-left: 5%;
-        .topLogoImage {
-          height: 80px;
-          width: auto;
-        }
-      }
-
       .navTabs {
         display: flex;
         gap: 45px;
@@ -277,7 +374,7 @@
         height: 30px;
         margin-right: 8%;
         justify-content: flex-end;
-        margin-top: 2%;
+        margin-top: -2%;
         -webkit-animation: slideDown 5s ease-out;
         animation: slideDown 5s ease-out;
         .navTabItem {
@@ -415,6 +512,274 @@
         height: 20px;
         width: auto;
         float: right;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .landingContainer {
+    //Boomerang entry
+
+    .boomerangOnly {
+      position: absolute;
+      z-index: 3;
+      left: 20%;
+      top: 32%;
+      transform: translate(0%, -40%);
+      -webkit-animation: boomIn 4s forwards;
+      animation: boomIn 4s forwards;
+    }
+    @-webkit-keyframes boomIn {
+      0% {
+        height: 250px;
+        opacity: 1;
+        z-index: 3;
+        top: 32%;
+        left: 20%;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+      35% {
+        height: 250px;
+        left: 63%;
+        top: 40%;
+        transform: translate(0%, -40%);
+        z-index: 3;
+      }
+      65% {
+        height: 195px;
+        top: 40%;
+        transform: translate(0%, -40%);
+        z-index: 3;
+      }
+      85% {
+        height: 185px;
+        left: 57.5%;
+        top: 40%;
+        transform: translate(0%, -40%);
+        z-index: 3;
+      }
+      90% {
+        height: 40px;
+        left: 225px;
+        top: 33px;
+        z-index: 3;
+      }
+      to {
+        height: 45px;
+        left: 233px;
+        top: 36px;
+        z-index: 3;
+      }
+    }
+    @keyframes boomIn {
+      0% {
+        height: 250px;
+        opacity: 1;
+        z-index: 3;
+        top: 32%;
+        left: 20%;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+      35% {
+        height: 250px;
+        left: 68%;
+        top: 40%;
+        transform: translate(0%, -40%);
+        z-index: 3;
+      }
+      65% {
+        height: 195px;
+        top: 40%;
+        transform: translate(0%, -40%);
+        z-index: 3;
+      }
+      85% {
+        height: 185px;
+        left: 60%;
+        top: 40%;
+        transform: translate(0%, -40%);
+        z-index: 3;
+      }
+      90% {
+        height: 40px;
+        left: 225px;
+        top: 33px;
+        z-index: 3;
+      }
+      to {
+        height: 45px;
+        left: 233px;
+        top: 36px;
+        z-index: 3;
+      }
+    }
+
+    .boomerangText {
+      position: absolute;
+      -webkit-animation: boomTextIn 4s forwards;
+      animation: boomTextIn 4s forwards;
+    }
+    @-webkit-keyframes boomTextIn {
+      0% {
+        height: 100px;
+        width: 0px;
+      }
+      50% {
+        height: 100px;
+        width: 600px;
+      }
+      85% {
+        height: 100px;
+        width: 600px;
+      }
+      90% {
+        height: 70px;
+        width: 200px;
+      }
+      98% {
+        height: 70px;
+        width: 120px;
+      }
+      to {
+        height: 70px;
+        width: 120px;
+      }
+    }
+    @keyframes boomTextIn {
+      0% {
+        height: 100px;
+        width: 0px;
+      }
+      50% {
+        height: 100px;
+        width: 600px;
+      }
+      85% {
+        height: 100%;
+        width: 600px;
+      }
+      90% {
+        height: 70px;
+        width: 200px;
+      }
+      98% {
+        height: 70px;
+        width: 120px;
+      }
+      to {
+        height: 70px;
+        width: 120px;
+      }
+    }
+
+    .openingBox {
+      position: relative;
+      width: 600px;
+      z-index: 4;
+      left: 40%;
+      top: 42%;
+      border: none;
+      -webkit-animation: openBox 4s forwards;
+      animation: openBox 4s forwards;
+      @-webkit-keyframes openBox {
+        0% {
+          height: 10%;
+          left: 40%;
+          top: 42%;
+          transform: translate(-40%, -42%);
+          width: 0px;
+        }
+        50% {
+          height: 10%;
+          left: 43%;
+          top: 42%;
+          transform: translate(-40%, -42%);
+          width: 600px;
+        }
+        85% {
+          height: 10%;
+          left: 43%;
+          top: 42%;
+          transform: translate(-40%, -42%);
+          width: 600px;
+        }
+        90% {
+          height: 70px;
+          left: 130px;
+          top: 4px;
+          width: 200px;
+        }
+        98% {
+          height: 70px;
+          width: 110px;
+          left: 130px;
+          top: 4px;
+        }
+        to {
+          height: 70px;
+          width: 120px;
+          left: 130px;
+          top: 4px;
+        }
+      }
+      @keyframes openBox {
+        0% {
+          height: 10%;
+          left: 40%;
+          top: 42%;
+          transform: translate(-40%, -42%);
+          width: 0px;
+        }
+        50% {
+          height: 10%;
+          left: 43%;
+          top: 42%;
+          transform: translate(-40%, -42%);
+          width: 600px;
+        }
+        85% {
+          height: 10%;
+          left: 43%;
+          top: 42%;
+          transform: translate(-40%, -42%);
+          width: 600px;
+        }
+        90% {
+          height: 70px;
+          left: 130px;
+          top: 4px;
+          width: 200px;
+        }
+        98% {
+          height: 70px;
+          width: 110px;
+          left: 130px;
+          top: 4px;
+        }
+        to {
+          height: 70px;
+          width: 120px;
+          left: 130px;
+          top: 4px;
+        }
+      }
+    }
+
+    //background stripe
+    .landingImage {
+      -webkit-animation: shrinkImage 4.8s;
+      animation: shrinkImage 4.8s;
+    }
+    .landingContent {
+      position: relative;
+      z-index: 2;
+
+      .landingText {
+        margin-left: 8%;
+        margin-top: -4.5%;
       }
     }
   }

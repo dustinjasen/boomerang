@@ -10,10 +10,14 @@ const Landing = () => {
                 src={landingImages[4].boomerang}
                 alt=""
                 className="boomerangOnly" />
-            <img
-                src={landingImages[5].boomerangText}
-                alt=""
-                className="boomerangText" />
+
+
+            <div className="openingBox">
+                <img
+                    src={landingImages[5].boomerangText}
+                    alt=""
+                    className="boomerangText" />
+            </div>
 
             <img
                 src={landingImages[0].orangeStripLander}
@@ -27,10 +31,6 @@ const Landing = () => {
             <section className="landingContent">
 
                 <div className="topBar">
-                    {/* <div className="logoContainer">
-                        <img src={landingImages[2].mainLogo} alt="" className="topLogoImage" />
-                    </div> */}
-
                     <div className="navTabs">
                         <a href="#" className="navTabItem">Home</a>
                         <a href="#ourCarsContainer" className="navTabItem">Our cars</a>

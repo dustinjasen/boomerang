@@ -32,3 +32,12 @@
     }
   }
 }
+
+@media screen and (max-width: 1700px) {
+  .descriptionContainer {
+    .descriptionText {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+}

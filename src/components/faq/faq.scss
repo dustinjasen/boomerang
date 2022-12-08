@@ -72,3 +72,43 @@
     }
   }
 }
+
+@media screen and (max-width: 1700px) { 
+  .FAQContainer {
+    min-height: 120vh;
+    height: 120vh;
+  
+    .FAQHeading {
+      font-size: 2.2rem;
+    }
+
+    .FAQAccordion {
+      .FAQAccordButtonOpen {
+        width: 60vw;
+        font-size: 1.4rem;
+        .openClose {
+          font-size: 1.4rem;
+        }
+      }
+  
+      .FAQAccordButtonClosed {
+        width: 60vw;
+        font-size: 1.4rem;
+        .openClose {
+          font-size: 1.4rem;
+        }
+      }
+  
+      .FAQAccordionContent {
+        width: 60vw;
+        p {
+          margin-left: 20%;
+          padding-left: 3%;
+          border-left: 1px solid rgba(0, 0, 0, 0.8);
+          font-size: 1.2rem;
+          width: 70%;
+        }
+      }
+    }
+  }
+}
